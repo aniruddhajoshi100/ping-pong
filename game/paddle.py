@@ -1,5 +1,6 @@
 import pygame
 
+
 class Paddle:
     def __init__(self, x, y, width, height):
         self.x = x
@@ -20,3 +21,4 @@ class Paddle:
             self.move(-self.speed, screen_height)
         elif ball.y > self.y + self.height:
             self.move(self.speed, screen_height)
+
